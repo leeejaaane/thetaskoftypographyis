@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+    font-family: "Helvetica Neue";
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+h1{
+   
+    font-family: "Helvetica Neue";
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+    text-shadow: 1px 1px 10px black;
+}
+
+.box {
+  position: relative;
+  margin: 40px auto;
+  width: 1200px;
+  height: 800px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+
+
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.box::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.box::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.box:hover::before,
+.box:hover::after {
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.box:hover::before {
+  left: 5px;
+}
+
+.box:hover::after {
+  right: 5px;
+}
+
+.button1{
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  padding: 30px 600px;
+  	border-radius: 50%;  
+    margin: 0;
+ 
+background: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: solid 2px;
+}
